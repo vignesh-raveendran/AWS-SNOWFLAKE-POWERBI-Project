@@ -22,6 +22,31 @@ Raw environmental and agronomic flat files were transformed into a highly intera
 
 ---
 
+# 🏗️ System Architecture
+
+```
+AWS S3 (Raw CSV Data)
+        │
+        ▼
+Snowflake Storage Integration (IAM Role)
+        │
+        ▼
+External Stage
+        │
+        ▼
+Snowflake Data Warehouse
+        │
+        ▼
+ELT Transformations (Feature Engineering)
+        │
+        ▼
+Power BI Semantic Model
+        │
+        ▼
+4-Page Dashboard Suite
+```
+---
+
 # 🎯 Business Objective
 
 Enable agricultural planners and agribusiness stakeholders to:
@@ -82,32 +107,6 @@ Delivered a fully automated cloud analytics platform that:
 - Flagged environmental anomalies for governance
 - Enabled seasonal and climatic yield comparison
 - Provided executive-ready agricultural intelligence dashboards
-
----
-
-# 🏗️ System Architecture
-
-```
-AWS S3 (Raw CSV Data)
-        │
-        ▼
-Snowflake Storage Integration (IAM Role)
-        │
-        ▼
-External Stage
-        │
-        ▼
-Snowflake Data Warehouse
-        │
-        ▼
-ELT Transformations (Feature Engineering)
-        │
-        ▼
-Power BI Semantic Model
-        │
-        ▼
-4-Page Dashboard Suite
-```
 
 ---
 
